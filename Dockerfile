@@ -12,4 +12,4 @@ RUN rm iop-core-6.2.1-x86_64-linux-gnu.tar.gz
 RUN mkdir -p /root/iop/chain
 VOLUME /root/iop/chain
 WORKDIR /root/iop-core-6.2.1/bin/
-ENTRYPOINT ["./iopd", "-datadir=/root/iop/chain", "-conf /root/iop.conf"]
+ENTRYPOINT ["./iopd", "-datadir=/root/iop/chain", "-conf=/root/iop.conf"]
